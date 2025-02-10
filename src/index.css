@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles for Three-Directional Space with Dark Background */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f; /* Dark background color for the whole page */
+    min-height: 100vh;
+    justify-content: center;  /* Center content horizon */
+    align-content: center;
+    align-items: flex-end; /*  Align content to the top */
+    color: white;  /*White text color for contrast  */
+}
+
+/* Container for the main content */
+.app-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1510px;  /* Maximum width for the entire layout */
+    margin: 0px 0px;  /* Adjusted 30px top and bottom, 60px left and right margins */
+    padding: 20px; /* Default padding for desktop */
+    background-color: #121212; /* Dark background for the content */
+    border-radius: 10px;  /* Optional: rounded corners */
+    min-height: 100vh;  /* Ensure content area covers full screen */
+}
+
+/* Apply no padding on mobile */
+@media (max-width: 640px) {
+    .app-container {
+        padding: 0px;  /* Padding set to 0px for mobile screens */
+    }
+}
+
+/* Main Content Area */
+.main-content {
+    flex-grow: 1; /* Allow main content area to take up the remaining space */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+h2, h3, h4 {
+    color: #fff;  /* Ensure headings are visible */
+}
+
+section {
+    min-height: 100vh;
+}
