@@ -2,7 +2,7 @@
 
 A dynamic, responsive, and elegant portfolio website designed to showcase skills, projects, and achievements. Built using React, Tailwind CSS, and Vite, this portfolio reflects a seamless blend of functionality and modern design aesthetics.
 
-🌐 Live Demo: https://rohangarad.netlify.app/
+
 
 🎯 Features
 
